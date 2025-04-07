@@ -1,0 +1,21 @@
+package com.java.set;
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class StudentSet {
+    public static void main(String[] args) {
+        // Creating a Set to store unique student names
+        Set<String> studentSet = new HashSet<>();
+        
+        // Adding student names to the Set
+        studentSet.add("Alice");
+        studentSet.add("Bob");
+        studentSet.add("Charlie");
+        studentSet.add("Alice"); // Duplicate element will not be added
+        
+        // Printing the Set (order is not guaranteed)
+        System.out.println("Student Names in Set: " + studentSet);
+    }
+}
+

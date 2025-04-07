@@ -1,0 +1,19 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class CollectionFrameworks {
+    public static void main(String[] args) {
+        // Creating a list to store student names
+        List<String> studentNames = new ArrayList<>();
+        
+        // Adding student names to the list using a for loop
+        for (int i = 1; i <= 5; i++) {
+            studentNames.add("Student " + i);
+        }
+        
+        // Printing the student names using a for-each loop
+        for (String name : studentNames) {
+            System.out.println(name);
+        }
+    }
+}
